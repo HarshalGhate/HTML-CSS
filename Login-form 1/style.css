@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    /* width: 90%; */
+}
+
+
+body {
+    /* font-family: sans-serif; */
+    /* background-image: url('./bg1.jpg'); */
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(141,140,185,1) 27%, rgba(0,0,246,1) 48%, rgba(0,212,255,1) 100%); */
+    /* background: linear-gradient(57deg, rgba(141,140,185,1) 0%, rgba(2,0,36,1) 10%, rgba(0,0,246,1) 64%, rgba(9,0,181,1) 70%, rgba(0,212,255,1) 100%); */
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    /* background-image: radial-gradient('./bg1.jpg'); */
+    /* background-image: linear-gradient(to right bottom, red 30%,blue  50%, violet  20%); */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+    color: #fff;
+}
+
+form {
+    
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30vw;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.heading {
+    text-align: center;
+    /* color: blue; */
+    font-size: 36px;
+
+}
+
+.inpute-fild {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inpute-fild input {
+    /* border-color: blue; */
+    border: none;
+    border: 1px solid rgb(238, 123, 203,.8);
+    border-radius: 10px;
+    padding: 12px;
+    outline: none;
+}
+
+input:focus{
+    /* border-color: red; */
+    /* border: 1px solid rgb(255, 2, 1,.3); */
+    box-shadow: 1px 1px rgb(109, 109, 225), 1px 0 1px rgba(0, 0, rgb(107, 107, 234), .3);
+}
+
+
+button {
+    /* background-color: blue; */
+    border: none;
+    /* border: 1px solid blue; */
+    border-radius: 10px;
+    color: white;
+    padding: 12px;
+    background-image: linear-gradient(to right, #de8bb3 0%, #eb9393 51%, #ee80b5 100%);
+}
+button:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+  }
+
+.url {}
+
+.account-info {}
+
+@media only screen and (max-width: 1200px) {
+    form{
+        width: 40vw;
+        /* background-color: violet; */
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    form{
+        width: 50vw;
+        /* background-color: yellow; */
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    form{
+        width: 80vw;
+        /* background-color: red; */
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    form{
+        width: 90vw;
+        padding: 25px;
+        /* background-color: aqua; */
+    }
+}
+
